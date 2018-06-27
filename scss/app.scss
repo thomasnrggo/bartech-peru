@@ -69,6 +69,13 @@ body{
   background-repeat: repeat-x;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+
 .full-vh {
   min-height: 100vh;
 }
@@ -96,7 +103,7 @@ $curtain-menu-button-size: rem-calc(40);
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100vw;
   z-index: 3;
@@ -108,7 +115,10 @@ $curtain-menu-button-size: rem-calc(40);
   transition: transform 0.5s;
   transition-delay: 0.5s;
   visibility: hidden;
-  
+
+  min-height: 100%;
+  overflow-y: auto;
+
   background-image: url('../assets/img/estrellas.png');
   background-position: center center;
   background-repeat: none;
@@ -179,7 +189,7 @@ $curtain-menu-button-size: rem-calc(40);
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 24px;
+    width: 28px;
     height: 4px;
     color: white;
     transition: transform 0.3s;
@@ -231,7 +241,7 @@ $curtain-menu-button-size: rem-calc(40);
 }
 
 .negative-margin {
-      margin-top: -80px;
+      margin-top: -9%;
 }
 
 .top-bar {
