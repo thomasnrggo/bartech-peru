@@ -57,7 +57,7 @@ $secundary-color: #5AF3FF;
 //-- Global Style --//
 
 body{
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-weight: 300;
   color: white;
 
@@ -67,10 +67,11 @@ body{
   background:  linear-gradient(150deg, rgb(0,0,63) 0%,rgb(90,243,255) 100%) ;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00003f', endColorstr='#5af3ff',GradientType=1 );
   background-repeat: repeat-x;
+
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-weight: 300;
   color: white;
 }
