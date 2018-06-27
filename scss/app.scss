@@ -50,3 +50,190 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+$primary-color: #00003F;
+$secundary-color: #5AF3FF;
+
+//-- Global Style --//
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: white;
+
+  background: rgb(0,0,63);
+  background:  -moz-linear-gradient(-75deg, rgb(0,0,63) 0%, rgb(90,243,255) 100%);
+  background:  -webkit-linear-gradient(-75deg, rgb(0,0,63) 0%,rgb(90,243,255) 100%);
+  background:  linear-gradient(150deg, rgb(0,0,63) 0%,rgb(90,243,255) 100%) ;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00003f', endColorstr='#5af3ff',GradientType=1 );
+  background-repeat: repeat-x;
+}
+
+.full-vh {
+  min-height: 100vh;
+}
+
+//--- Menu ---//
+
+$curtain-menu-color: $primary-color;
+$curtain-menu-text-color: $white;
+$curtain-menu-font-size: rem-calc(45);
+$curtain-menu-button-size: rem-calc(40);
+
+.curtain-menu {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+  margin-top: -62px;
+}
+
+.curtain-menu-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+  visibility: hidden;
+  
+  background-image: url('../assets/img/estrellas.png');
+  background-position: center center;
+  background-repeat: none;
+  background-size: contain;
+
+  .curtain-menu-list {
+    li {
+      width: 100%;
+      font-weight: 100;
+      font-size: $curtain-menu-font-size;
+      min-height: $curtain-menu-font-size;
+      text-align: center;
+      justify-content: center;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        background: none;
+
+        a {
+          color: red;
+        }
+      }
+
+      a {
+        color: $curtain-menu-text-color;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.curtain-menu .curtain {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: flex 0.45s;
+
+  &:nth-child(2) {
+    flex:1 0 100%;
+    background: transparent;
+  }
+
+  &:nth-child(odd){
+    background: rgb(0,0,63);
+    background: -moz-linear-gradient(-75deg, rgb(0,0,63) 0%, rgb(90,243,255) 100%);
+    background: -webkit-linear-gradient(-75deg, rgb(0,0,63) 0%,rgb(90,243,255) 100%);
+    background: linear-gradient(180deg, rgb(0,0,63) 0%,rgb(90,243,255) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00003f', endColorstr='#5af3ff',GradientType=1 );
+  }
+}
+
+.curtain-menu-button {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 5;
+}
+
+.curtain-menu-button-toggle {
+  width: $curtain-menu-button-size;
+  height: $curtain-menu-button-size;
+  border-radius: 5000px;
+  position: relative;
+  cursor: pointer;
+
+  button, div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 4px;
+    color: white;
+    transition: transform 0.3s;
+    transition-delay: 0.5s;
+  }
+
+  .bar1{
+    transform: translateX(-50%)translateY(-50%)rotate(-90deg);
+  }
+
+  .bar2{
+    transform: translateX(-50%)translateY(-50%)rotate(-180deg);
+  }
+
+
+  &:hover {
+    background: transparent;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.curtain-menu-open {
+  .curtain:nth-child(2) {
+    flex: 0 0 0%;
+  }
+
+  .curtain-menu-wrapper {
+    transform: translateY(0%);
+    visibility: visible;
+    pointer-events:all;
+  }
+
+ .curtain-menu-button-toggle {
+    .bar1{
+      transform: translateX(-50%)translateY(-50%)rotate(-45deg);
+    }
+
+    .bar2{
+      transform: translateX(-50%)translateY(-50%)rotate(-135deg);
+    }
+  }
+}
+
+.logo {
+  max-width: 180px;
+}
+
+.negative-margin {
+      margin-top: -80px;
+}
+
+.top-bar {
+  background: transparent;
+}
