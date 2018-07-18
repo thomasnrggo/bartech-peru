@@ -7,14 +7,6 @@ body{
   font-family: 'Exo 2', sans-serif;
   font-weight: 300;
   color: white;
-
-  background: rgb(0,0,63);
-  background:  -moz-linear-gradient(-75deg, rgb(0,0,63) 0%, rgb(90,243,255) 100%);
-  background:  -webkit-linear-gradient(-75deg, rgb(0,0,63) 0%,rgb(90,243,255) 100%);
-  background:  linear-gradient(150deg, rgb(0,0,63) 0%,rgb(90,243,255) 100%) ;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00003f', endColorstr='#5af3ff',GradientType=1 );
-  background-repeat: repeat-x;
-
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -23,9 +15,28 @@ h1,h2,h3,h4,h5,h6 {
   color: white;
 }
 
+.gradient {
+  background: rgb(0,0,63);
+  background:  -moz-linear-gradient(-75deg, rgb(0,0,63) 0%, rgb(90,243,255) 100%);
+  background:  -webkit-linear-gradient(-75deg, rgb(0,0,63) 0%,rgb(90,243,255) 100%);
+  background:  linear-gradient(150deg, rgb(0,0,63) 0%,rgb(90,243,255) 100%) ;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00003f', endColorstr='#5af3ff',GradientType=1 );
+  background-repeat: repeat-x;
+}
+
+.mini-estrellas {
+  min-height: 35vh;
+  background-image: url('../assets/img/estrellas-mini.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
 .full-vh {
   min-height: 100vh;
 }
+
 
 .logo {
   max-width: 180px;
@@ -56,4 +67,35 @@ h1,h2,h3,h4,h5,h6 {
     transform: scale(1.02);
     border-color: $primary-color;
   }
+}
+
+footer {
+  padding: 2% 0;
+
+  .logo-container {
+
+    img {
+      max-height: 80%;
+      transition: .4s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  .social-links {
+    margin-top: 4%;
+
+    .fab {
+      font-size: 1.5rem;
+      color: white;
+      transition: .4s ease;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
 }
