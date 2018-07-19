@@ -4,123 +4,214 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bartech</title>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500" rel="stylesheet">
+    <title>Servicio | Bartech</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/app.css">
   </head>
 
-  <body>
+  <body class="gradient">
 
-    <section id="home" class="full-vh">
-      <div class="grid-container">
-        <header class="header-menu">
-
+    <section id="portada">
+      <header>
+        <div class="grid-container">
           <div class="top-bar">
             <div class="top-bar-left">
               <div class="logo">
-                <a href="#">
-                  <img src="assets/img/logo.png" alt="">
+                <a href="../../index.html">
+                  <img src="../img/logo-blanco.png" alt="Bartech">
                 </a>
               </div>
             </div>
+            <div class="top-bar-right">
+              <span class="menu-trigger trigger material-icons" rel="nav-overlay">menu</span>
+            </div>
+          </div>
+        </div>
+      </header>
 
-            <div class="top-bar-right negative-margin">
-              <ul class="menu">
-                <!-- the trigger -->
-                <div class="curtain-menu-button" data-curtain-menu-button>
-                  <div class="curtain-menu-button-toggle">
-                    <button class="menu-icon" type="button"></button>
-                  </div>
-                </div>
+
+        <div class="slider-container">
+          <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+            <div class="orbit-wrapper">
+
+              <ul class="orbit-container">
+                <li class="is-active orbit-slide">
+                  <figure class="orbit-figure">
+                    <img class="orbit-image" src="https://placehold.it/1200x600/999?text=Slide-1" alt="Space">
+                  </figure>
+                </li>
+                <li class="orbit-slide">
+                  <figure class="orbit-figure">
+                    <img class="orbit-image" src="https://placehold.it/1200x600/888?text=Slide-2" alt="Space">
+                  </figure>
+                </li>
+                <li class="orbit-slide">
+                  <figure class="orbit-figure">
+                    <img class="orbit-image" src="https://placehold.it/1200x600/777?text=Slide-3" alt="Space">
+                  </figure>
+                </li>
+                <li class="orbit-slide">
+                  <figure class="orbit-figure">
+                    <img class="orbit-image" src="https://placehold.it/1200x600/666&text=Slide-4" alt="Space">
+                  </figure>
+                </li>
               </ul>
             </div>
+            <nav class="orbit-bullets">
+              <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+              <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+            </nav>
           </div>
-        </header>
-      </div>
-      <!-- fin de grid-container fluid  -->
-
-      <!-- the menu  -->
-      <div class="curtain-menu">
-        <div class="curtain"></div>
-        <div class="curtain"></div>
-        <div class="curtain"></div>
-        <div class="curtain-menu-wrapper">
-          <ul class="curtain-menu-list menu vertical">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
         </div>
-      </div>
-      <!-- fin de menu -->
 
-      <div class="slider-container">
-        <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-          <div class="orbit-wrapper">
-            <div class="orbit-controls">
-              <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-              <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-            </div>
-            <ul class="orbit-container">
-              <li class="is-active orbit-slide">
-                <figure class="orbit-figure">
-                  <img class="orbit-image" src="https://placehold.it/1200x600/999?text=Slide-1" alt="Space">
-                </figure>
-              </li>
-              <li class="orbit-slide">
-                <figure class="orbit-figure">
-                  <img class="orbit-image" src="https://placehold.it/1200x600/888?text=Slide-2" alt="Space">
-                </figure>
-              </li>
-              <li class="orbit-slide">
-                <figure class="orbit-figure">
-                  <img class="orbit-image" src="https://placehold.it/1200x600/777?text=Slide-3" alt="Space">
-                </figure>
-              </li>
-              <li class="orbit-slide">
-                <figure class="orbit-figure">
-                  <img class="orbit-image" src="https://placehold.it/1200x600/666&text=Slide-4" alt="Space">
-                </figure>
-              </li>
-            </ul>
+      <!-- <div id="nav-overlay">
+        <nav>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+      </div> -->
+    </section>
+
+    <section id="porqueBartech">
+
+      <div class="mini-estrellas grid-container" style="margin-bottom: -15%"></div>
+
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x align-center text-center">
+          <div class="small-10 medium-8 cell">
+            <h2>Porque Bartech</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <nav class="orbit-bullets">
-            <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-            <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-            <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-          </nav>
+        </div>
+
+        <div class="grid-x grid-padding-x text-center">
+
+          <div class="small-12 medium-4 large-4 cell">
+            <a href="#">
+              <div class="porque-card">
+                <div class="porque-card-body">
+                  <h3>Innovacion</h3>
+                </div>
+                <div class="porque-card-img">
+                  <img src="../img/Innovacion.png" alt="Desarrollo web">
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="small-12 medium-4 large-4 cell">
+            <a href="#">
+              <div class="porque-card">
+                <div class="porque-card-body">
+                  <h3>Confianza</h3>
+                </div>
+                <div class="porque-card-img">
+                  <img src="../img/confianza.png" alt="Branding">
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="small-12 medium-4 large-4 cell">
+            <a href="#">
+              <div class="porque-card">
+                <div class="porque-card-body">
+                  <h3>Experiencia</h3>
+                </div>
+                <div class="porque-card-img">
+                  <img src="../img/experiencia.png" alt="Marketing digital">
+                </div>
+              </div>
+            </a>
+          </div>
+
         </div>
       </div>
 
     </section>
-    <!-- fin de #inicio -->
+    <!-- fin de #porqueBartech  -->
 
+    <div class="mini-estrellas grid-container" style="margin-top: -10%; margin-bottom: -10%;"></div>
+
+    <section id="metodologia">
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x align-middle">
+          <div class="small-12 medium-3 large-3 cell text-right metodologias-container">
+            <h2>Sprit<br>Design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="../html/nosotros.html" class="button bartech-btn">Learn More</a>
+          </div>
+
+          <div class="small-12 medium-6 cell">
+            <img src="../img/metodologia.png" alt="Metodologia Bartech">
+          </div>
+
+          <div class="small-12 medium-3 large-3 cell  metodologias-container">
+              <h2>Design<br>Thinking</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <a href="../html/nosotros.html" class="button bartech-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin de #metodologia  -->
+
+    <div class="mini-estrellas grid-container" style="margin-top: -15%; margin-bottom: -5%;"></div>
+
+
+    <section id="saberMas">
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x align-middle saberMas">
+          <div class="small-12 medium-6 large-5 large-offset-1 cell">
+            <h2>¿Quieres conocer mas de nosostros?</h2>
+            <div class="grid-x grid-padding-x btn-group">
+              <div class="small-12 medium-6 cell">
+                <a href="./servicios.html" class="button bartech-btn expanded">Servicios</a>
+              </div>
+              <div class="small-12 medium-6 cell">
+                <a href="./contacto.html" class="button bartech-btn expanded">Contacto</a>
+              </div>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-6 cell">
+            <div class="saberMas-img">
+              <img src="../img/sabermas.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <footer class="footer">
       <div class="grid-container">
         <div class="grid-x align-center text-center">
-          <div class="small-8 medium-2">
-            <a href="#">
+          <div class="small-8 medium-2 logo-container">
+            <a href="../../index.html">
               <img src="../img/logo-blanco.png" alt="example">
             </a>
 
-            <div class="grid-x">
+            <div class="grid-x social-links">
               <div class="small-4 cell">
-                <a href="#">
-                  <img src="../img/example.png" alt="example">
+                <a target="_blank" href="https://www.facebook.com/bartech.pe/">
+                  <i class="fab fa-facebook"></i>
                 </a>
               </div>
               <div class="small-4 cell">
-                <a href="#">
-                  <img src="../img/example.png" alt="example">
+                <a target="_blank" href="https://www.instagram.com/bartechpe/">
+                  <i class="fab fa-instagram"></i>
                 </a>
               </div>
               <div class="small-4 cell">
-                <a href="#">
-                  <img src="../img/example.png" alt="example">
+                <a target="_blank" href="https://www.linkedin.com/in/bartechperu">
+                  <i class="fab fa-linkedin"></i>
                 </a>
               </div>
             </div>
