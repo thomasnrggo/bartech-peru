@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1400px" height="360px" viewBox="0 0 1400 360" enable-background="new 0 0 1400 360" xml:space="preserve">
+<g>
+	<circle fill="#1F80AA" cx="417.77" cy="89.615" r="9.282"/>
+	<circle fill="#001D2F" cx="1120.861" cy="214.919" r="9.281"/>
+	<circle fill="#001D2F" cx="354.519" cy="188.796" r="4.041"/>
+	<circle fill="#001D2F" cx="92.31" cy="106.42" r="4.041"/>
+	<circle fill="#00FFFF" cx="932.307" cy="87.856" r="4.041"/>
+	<circle fill="#1F80AA" cx="989.157" cy="160.95" r="5.201"/>
+	<circle fill="#00FFFF" cx="254.74" cy="172.553" r="2.3"/>
+	<circle fill="#1F80AA" cx="1290.814" cy="122.663" r="2.3"/>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="688.6816" y1="213.1592" x2="693.2822" y2="213.1592">
+		<stop  offset="0.0471" style="stop-color:#0086BC"/>
+		<stop  offset="0.9895" style="stop-color:#005BE0"/>
+	</linearGradient>
+	<circle fill="url(#SVGID_1_)" cx="690.982" cy="213.159" r="2.3"/>
+	<circle fill="#001D2F" cx="1128.383" cy="90.177" r="2.3"/>
+	
+		<rect x="207.599" y="87.876" transform="matrix(0.8162 0.5777 -0.5777 0.8162 90.6786 -104.6964)" fill="#99CDDE" width="4.64" height="4.64"/>
+	<polygon fill="#00FFFF" points="726.279,254.196 733.102,242.284 745.016,249.104 738.192,261.014 	"/>
+	
+		<rect x="156.321" y="201.302" transform="matrix(-0.9725 0.2328 -0.2328 -0.9725 365.226 368.5916)" fill="#00FFFF" width="9.087" height="9.088"/>
+	
+		<rect x="1234.582" y="170.067" transform="matrix(0.3983 0.9173 -0.9173 0.3983 903.4053 -1031.0446)" fill="#99CDDE" width="6.014" height="6.016"/>
+</g>
+</svg>
