@@ -1,5 +1,17 @@
+#portada-servicios {
+
+
+  .portada-container{
+    min-height: 90vh;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+
 #servicios-page {
-  padding: 4% 0 2%;
+  padding: 2% 0 2%;
 
   .microservice-card{
     cursor: pointer;
