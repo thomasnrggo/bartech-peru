@@ -1,0 +1,25 @@
+#servicios-page {
+  padding: 4% 0 2%;
+
+  .microservice-card{
+    cursor: pointer;
+    margin: 12px 0;
+    transition: .4s ease;
+
+    &:hover {
+      transform: scale(1.08);
+    }
+
+    &:focus {
+      outline: none !important;
+    }
+
+    .microservice-title{
+
+    }
+
+    .microservice-icon{
+
+    }
+  }
+}

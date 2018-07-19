@@ -15,6 +15,12 @@ h1,h2,h3,h4,h5,h6 {
   color: white;
 }
 
+a:focus, .button:focus, .button.alt:focus, .button.added_to_cart:focus,
+.button.wc-forward:focus, button:focus, input[type="button"]:focus,
+input[type="reset"]:focus, input[type="submit"]:focus {
+  outline: none !important;
+}
+
 .gradient {
   background: rgb(0,0,63);
   background:  -moz-linear-gradient(-75deg, rgb(0,0,63) 0%, rgb(90,243,255) 100%);
@@ -70,6 +76,20 @@ h1,h2,h3,h4,h5,h6 {
     background-color: $primary-color;
     transform: scale(1.02);
     border-color: $primary-color;
+  }
+}
+
+.reveal {
+  border: none;
+  padding: 3% 2%;
+
+  .material-icons {
+    color: white;
+    transition: .5s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
   }
 }
 
