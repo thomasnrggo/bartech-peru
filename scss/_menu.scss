@@ -12,8 +12,8 @@
   font-size: 3rem;
   // -webkit-transform: rotate(225deg);
   // transform: rotate(225deg);
-  -webkit-transition: all 350ms ease;
-  transition: all 450ms ease;
+  -webkit-transition: all 450ms ease;
+  transition: all 650ms ease;
 
   &:hover {
 
@@ -25,6 +25,7 @@
   font-size: 3rem;
   // -webkit-transform: rotate(0deg);
   // transform: rotate(0deg);
+  z-index: 99;
 }
 
 #nav-overlay {
@@ -33,6 +34,7 @@
   width: 100%;
   height: 100%;
   top: 0;
+  z-index: -1;
 }
 
 
@@ -59,27 +61,35 @@
   justify-content: center;
   list-style: none;
   z-index: 90;
-  -webkit-transition: top 350ms ease;
-  transition: top 350ms ease;
+  -webkit-transition: top 450ms ease;
+  transition: top 450ms ease;
 }
 
 #nav-overlay nav li {
   display: block;
   text-align: center;
-  margin: 1rem 0;
+  margin: .8rem 0;
 }
 
 #nav-overlay nav a, #nav-overlay nav a:visited {
   font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 15px;
+  font-weight: 300;
+  letter-spacing: 10px;
   line-height: 1.25;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
+  transition: .4s ease;
 }
 
-#nav-overlay nav a:hover, #nav-overlay nav a:focus, #nav-overlay nav a:visited, #nav-overlay nav a:visited:hover, #nav-overlay nav a:visited:focus, #nav-overlay nav a:visited:visited { text-decoration: underline; }
+#nav-overlay nav a:hover, #nav-overlay nav a:focus, #nav-overlay nav a:visited, #nav-overlay nav a:visited:hover, #nav-overlay nav a:visited:focus, #nav-overlay nav a:visited:visited {
+  text-decoration: none;
+  font-size: 3.4rem;
+}
+
+#nav-overlay.open {
+  z-index: 1;
+}
 
 #nav-overlay.open nav {
   top: 0; }
@@ -92,7 +102,7 @@
   height: 100%;
   width: 100%;
   background: rgb(0,0,63);
-  transition: transform 350ms, -webkit-transform 350ms;
+  transition: transform 450ms, -webkit-transform 450ms;
 
   background: rgb(0,0,63);
   background:  -moz-linear-gradient(-75deg, rgb(0,0,63) 0%, rgb(90,243,255) 100%);
