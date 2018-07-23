@@ -13,6 +13,10 @@
 #servicios-page {
   padding: 2% 0 2%;
 
+  .title-desarrollo {
+    margin-bottom: -25%;
+  }
+
   .microservice-card{
     cursor: pointer;
     margin: 12px 0;
@@ -27,12 +31,34 @@
     }
 
     .microservice-title{
+      padding: 0 12px;
 
+      h4 {
+        font-size: 2rem;
+      }
     }
 
     .microservice-icon{
 
     }
+  }
+
+  .img-desarrollo {
+    img {
+      max-width: 80%;
+    }
+  }
+
+  #servi-desarrollo-container {
+    padding: 2% 0;
+  }
+
+  #servi-otros-container {
+    padding: 2% 0;
+  }
+
+  #servi-bartech-container {
+      padding: 2% 0;
   }
 }
 
