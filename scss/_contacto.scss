@@ -1,6 +1,10 @@
 #contacto {
 
-  padding: 4% 0 1%;
+
+  .contacto-container {
+
+    min-height: 90vh;
+  }
 
   .contacto-img {
 
@@ -9,11 +13,15 @@
     }
   }
 
+  textarea {
+    min-height: 200px;
+  }
+
   .social-links {
     margin-top: 10%;
 
     .fab {
-      font-size: 2.4rem;
+      font-size: 2rem;
       color: white;
       transition: .4s ease;
 
