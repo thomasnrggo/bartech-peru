@@ -4,14 +4,31 @@
 
     min-height: 95vh;
 
-    @media (max-width: 1024px) {
-      min-height: 90vh;
-      padding: 6% 0 0%;
+    @media (max-width: 1366px) {
+      min-height: 42vh;
+      padding: 6% 0 6%;
     }
 
     @media (max-width: 768px) {
-      min-height: 30vh;
+      min-height: auto;
       padding: 6% 0 6%;
+    }
+
+    @media (max-width: 414px) {
+      min-height: 90vh;
+      padding: 6% 0 6%;
+    }
+  }
+
+  .caption {
+
+    @media (max-width: 414px) {
+      position: relative;
+      margin-top: 24px;
+
+      h2 {
+        font-size: 2.6rem !important;
+      }
     }
   }
 }
@@ -24,8 +41,13 @@
 
   .descubreMasServicios{
 
+    @media (max-width: 1024px) {
+      min-height: 12vh;
+      margin: 2% 0;
+    }
+
     @media (max-width: 768px) {
-      margin-top: -8%;
+      margin: 2% 0;
     }
   }
 }
@@ -58,9 +80,16 @@
 }
 
 #metodologia {
-
-  margin-top: -6%;
   padding: 2% 0 2%;
+  margin-top: -8%;
+
+  @media (max-width: 1024px) {
+    
+  }
+
+  @media (max-width: 414px) {
+    margin-top: 0;
+  }
 
   .metodologias {
 

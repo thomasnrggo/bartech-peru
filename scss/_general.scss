@@ -15,6 +15,13 @@ h1,h2,h3,h4,h5,h6 {
   color: white;
 }
 
+@media (max-width: 414px) {
+
+  h2 {
+    font-size: 2.6rem !important;
+  }
+}
+
 a:focus, .button:focus, .button.alt:focus, .button.added_to_cart:focus,
 .button.wc-forward:focus, button:focus, input[type="button"]:focus,
 input[type="reset"]:focus, input[type="submit"]:focus {
