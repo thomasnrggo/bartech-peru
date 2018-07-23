@@ -1,3 +1,34 @@
+#home {
+
+  .home-slider-container {
+
+    min-height: 95vh;
+
+    @media (max-width: 1024px) {
+      min-height: 90vh;
+      padding: 6% 0 0%;
+    }
+
+    @media (max-width: 768px) {
+      min-height: 30vh;
+      padding: 6% 0 6%;
+    }
+  }
+}
+
+#servicios {
+
+  .services-container {
+    padding: 4% 0 0;
+  }
+
+  .descubreMasServicios{
+
+    @media (max-width: 768px) {
+      margin-top: -8%;
+    }
+  }
+}
 
 .service-card {
 
@@ -11,7 +42,7 @@
     transition: .4s ease;
 
     img {
-      max-width: 280px;
+      max-width: 80%;
     }
   }
 
@@ -29,6 +60,7 @@
 #metodologia {
 
   margin-top: -6%;
+  padding: 2% 0 2%;
 
   .metodologias {
 
@@ -45,13 +77,15 @@
 }
 
 #clientes {
-
-  margin-top: -2%;
+  padding: 4% 0 0;
 
   .impulsados {
-
     img {
-      max-width: 450px;
+      max-width: 80%;
+
+      @media (max-width: 768px) {
+        max-width: 100%;
+      }
     }
   }
 

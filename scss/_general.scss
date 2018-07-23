@@ -27,11 +27,12 @@ input[type="reset"]:focus, input[type="submit"]:focus {
   background:  -webkit-linear-gradient(-75deg, rgb(0,0,63) 0%,rgb(90,243,255) 100%);
   background:  linear-gradient(150deg, rgb(0,0,63) 0%,rgb(90,243,255) 100%) ;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00003f', endColorstr='#5af3ff',GradientType=1 );
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .estrellas {
-  min-height: 35vh;
+  min-height: 10vh;
   background-image: url('../assets/svg/estrellas.svg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -39,7 +40,7 @@ input[type="reset"]:focus, input[type="submit"]:focus {
 }
 
 .mini-estrellas {
-  min-height: 35vh;
+  min-height: 10vh;
   background-image: url('../assets/svg/estrellas-mini.svg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -66,6 +67,12 @@ input[type="reset"]:focus, input[type="submit"]:focus {
   background: transparent;
 }
 
+.top-bar .top-bar-left, .top-bar .top-bar-right {
+  @media (max-width: 414px) {
+    flex: none !important;
+  }
+}
+
 .btn-group{
   margin: 5% 0;
 }
@@ -73,7 +80,6 @@ input[type="reset"]:focus, input[type="submit"]:focus {
 .bartech-btn {
   background-color: transparent;
   min-width: 200px;
-  width: 80%;
   border: 1px solid #fff;
   border-radius: 5000px;
   font-size: 1.3rem;
