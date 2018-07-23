@@ -2,6 +2,20 @@
 
   .portada-container{
     min-height: 90vh;
+
+    @media (max-width: 1366px) {
+      min-height: 95vh
+    }
+
+    @media (max-width: 1024px) {
+      padding: 6% 0 4%;
+      min-height: 30vh
+    }
+
+    @media (max-width: 414px) {
+      padding: 6% 0 4%;
+      min-height: 90vh
+    }
   }
 
   h2 {
@@ -10,9 +24,10 @@
 }
 
 #porqueBartech{
+  margin-top: 2%;
 
   .porque-icon-container {
-    margin: 1% 0;
+    margin: 3% 0 ;
   }
 
   .porque-card-img {
